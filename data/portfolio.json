@@ -1,0 +1,20 @@
+[
+  {
+    "title": "E-Commerce Website 2",
+    "description": "A fully functional e-commerce platform with payment integration.",
+    "image": "/imgs/folio-1.jpg",
+    "link": "/portfolio/ecommerce"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio website to showcase projects and skills.",
+    "image": "/imgs/folio-2.jpg",
+    "link": "/portfolio/portfolio-website"
+  },
+  {
+    "title": "Blog Platform",
+    "description": "A blogging platform with user authentication and content management.",
+    "image": "/imgs/folio-3.jpg",
+    "link": "/portfolio/blog-platform"
+  }
+]

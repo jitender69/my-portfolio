@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Understanding Node.js",
+    "description": "A beginner's guide to understanding the basics of Node.js and its ecosystem.",
+    "author": "Jitender Sharma",
+    "date": "2025-04-20",
+    "link": "/blogs/understanding-nodejs",
+    "image": "/imgs/blog-1.jpg"
+  },
+  {
+    "title": "Top 10 JavaScript Frameworks",
+    "description": "An overview of the top 10 JavaScript frameworks to use in 2025.",
+    "author": "Jitender Sharma",
+    "date": "2025-04-18",
+    "link": "/blogs/top-10-js-frameworks",
+    "image": "/imgs/blog-2.jpg"
+  },
+  {
+    "title": "Mastering Express.js",
+    "description": "Learn how to build scalable web applications using Express.js.",
+    "author": "Jitender Sharma",
+    "date": "2025-04-15",
+    "link": "/blogs/mastering-expressjs",
+    "image": "/imgs/blog-3.jpg"
+  }
+]

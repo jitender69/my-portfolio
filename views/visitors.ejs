@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Logs</title>
+</head>
+<body>
+    <h1>Visitor Logs</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>User Agent</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% logs.forEach(log => { %>
+                <tr>
+                    <td><%= log.ip %></td>
+                    <td><%= log.userAgent %></td>
+                    <td><%= log.timestamp %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<script>
+    const express = require('express');
+    const app = express();
+
+    app.use('/admin/visitors', (req, res, next) => {
+        const auth = { username: 'admin', password: 'password' }; // Change these credentials
+
+        const b64auth = (req.headers.authorization || '').split(' ')[1] || '';
+        const [login, password] = Buffer.from(b64auth, 'base64').toString().split(':');
+
+        if (login && password && login === auth.username && password === auth.password) {
+            return next();
+        }
+
+        res.set('WWW-Authenticate', 'Basic realm="401"');
+        res.status(401).send('Authentication required.');
+    });
+</script>

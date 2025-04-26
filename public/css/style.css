@@ -1,0 +1,31 @@
+.blog-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card .card-body {
+    padding: 20px;
+}
+
+.portfolio-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-card .card-body {
+    padding: 20px;
+}
